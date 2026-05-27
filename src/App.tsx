@@ -39,6 +39,9 @@ import SystemsLogConsole from './components/SystemsLogConsole';
 // Custom generated Medium post thumbnails
 import chicagoCrimeImg from './assets/images/chicago_crime_thumbnail_1779568417989.png';
 import rfmAnalyticsImg from './assets/images/rfm_analytics_thumbnail_1779568438856.png';
+import profpic from './assets/images/bintang_avatar.jpg';
+import chicago_thumbnail from './assets/images/chicago.png';
+import ecommerce_thumbnail from './assets/images/ecommerce.png';
 
 export default function App() {
   // Modal visibility states
@@ -50,11 +53,10 @@ export default function App() {
   // Profile picture states with resilient fallback candidate paths
   const personal = cvData.personal;
   const profileImgCandidates = [
+    profpic,
     '/input_file_0.png',
     '/input_file_1.png',
-    '/input_file_2.png',
-    personal.github ? `${personal.github}.png` : 'https://github.com/FullKersa.png',
-    'https://github.com/FullKersa.png'
+    '/input_file_2.png'
   ];
   const [profileImg, setProfileImg] = useState(profileImgCandidates[0]);
   const [profileImgIndex, setProfileImgIndex] = useState(0);
@@ -724,7 +726,7 @@ export default function App() {
                 {/* Aspect ratio bounding box for image */}
                 <div className="relative w-full aspect-[16/10] overflow-hidden bg-black/40">
                   <img 
-                    src={rfmAnalyticsImg}
+                    src={ecommerce_thumbnail}
                     alt="Ecommerce Sales Dashboard"
                     className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-700 ease-out"
                     referrerPolicy="no-referrer"
@@ -756,7 +758,7 @@ export default function App() {
                 {/* Aspect ratio bounding box for image */}
                 <div className="relative w-full aspect-[16/10] overflow-hidden bg-black/40">
                   <img 
-                    src={chicagoCrimeImg}
+                    src={chicago_thumbnail}
                     alt="Chicago Crime Dashboard"
                     className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-700 ease-out"
                     referrerPolicy="no-referrer"
