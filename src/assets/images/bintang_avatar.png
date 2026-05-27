@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="module" src="/@vite/client"></script>
+
+    <script>
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          if (originalFetch) {
+            var currentFetch = originalFetch;
+            Object.defineProperty(window, 'fetch', {
+              get: function() { return currentFetch; },
+              set: function(val) { currentFetch = val; },
+              configurable: true,
+              enumerable: true
+            });
+          }
+        } catch (e) {}
+        try {
+          if (typeof globalThis !== 'undefined' && globalThis !== window && globalThis.fetch) {
+            var currentFetchGT = globalThis.fetch;
+            Object.defineProperty(globalThis, 'fetch', {
+              get: function() { return currentFetchGT; },
+              set: function(val) { currentFetchGT = val; },
+              configurable: true,
+              enumerable: true
+            });
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bintang Muhammad - BI & Data Analyst Portfolio</title>
+  <script src="/_aistudio-iframe.js"></script></head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
