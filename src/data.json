@@ -1,7 +1,7 @@
 {
   "personal": {
     "name": "Bintang Muhammad",
-    "title": "Business Intelligence & Data Analyst",
+    "title": "Business Intelligence Analyst & Engineer",
     "subtitle": "BINTANG MUHAMMAD",
     "email": "bintangm22@gmail.com",
     "phone": "+62 813 8270 1896",
@@ -10,8 +10,13 @@
     "linkedin": "https://www.linkedin.com/in/bintang-muhammad-326827140/",
     "twitter": "https://x.com/hahartx",
     "tableau": "https://public.tableau.com/",
-    "cvLink": "https://drive.google.com/file/d/1_LSDaKKft1bUApp-Hy45EV1sprxR1zw9/view?usp=sharing",
-    "summary": "Business Intelligence Analyst with a Master's in Applied Business Analytics and 4+ years of expertise in Python, SQL, and data visualization. Experienced working with clients across diverse industries including Fashion, Food & Beverage, and Retail. Bridges technical analysis with stakeholder communication to drive strategic decisions, transforming complex datasets into actionable insights through automated reporting and interactive dashboards. Actively expanding into the cryptocurrency space with hands-on experience in spot trading, technical analysis, and on-chain analytics via Dune Analytics."
+    "cvLink": "https://drive.google.com/file/d/1AmKnfF74KPF1PBggvVNgr5V4EuQbfQiL/view?usp=sharing",
+    "summary": [
+      "Experienced Analytics Engineer and BI Analyst with a Master's in Applied Business Analytics and 4+ years of expertise in Python, SQL, and Django.",
+      "Specializes in building high-performance production data pipelines and optimizing database queries across the Retail, Fashion, and F&B sectors.",
+      "Bridges the gap between complex backend engineering and strategic stakeholder decisions through automated reporting, interactive dashboards, and scalable data infrastructure.",
+      "Actively expanding into the Web3 ecosystem with hands-on expertise in crypto trading, market structure analysis, and on-chain analytics."
+    ]
   },
   "skills": [
     {
@@ -53,19 +58,22 @@
   "experience": [
     {
       "period": "April 2022 – Present",
-      "title": "Business Intelligence Analyst",
+      "title": "Business Intelligence Analyst & Engineer",
       "company": "Stamps Indonesia",
       "highlights": [
-        "Delivered 30+ customized routine reports for clients such as Levi's, Burger King, Kawan Lama Group, and Tim Hortons Singapore, covering data on orders, demographics, communications, campaigns, and employee compensation to support their decision-making needs.",
-        "Handled client-specific ad-hoc data requests (excluding routine reports), including product performance analysis, spillover impact analysis, cohort analysis, customer movement tracking, segmentation/clustering, forecasting, store-level investigative insights, and A/B testing.",
-        "Generated on average 100k - 800k user lists for targeted marketing campaigns (e.g., WhatsApp, email, offline events), using strict client-defined criteria such as average transaction value, last transaction location and time, and customer profile attributes.",
-        "Developed targeted machine learning models using Scikit-Learn, resulting in a 22.31% increase in email click-through rates and a 184.36% boost in revenue per open email. Worked across the full process—from data extraction via Django querysets, preprocessing with Pandas and NumPy, to model training and user prediction on an ad-hoc basis.",
-        "Bridged communication between technical and non-technical stakeholders by translating data insights into clear, actionable language. Worked closely with both the marketing team and clients to align on report objectives, ensuring clarity and preventing miscommunication.",
-        "Engineered and took initiative in exploring user-based Association Rule recommendation systems, enabling personalized product suggestions for approximately 900,000 users via Email and WhatsApp.",
-        "Built more than 20 interactive Metabase dashboards for internal teams and routine reporting using SQL and ClickHouse database, while also developing, maintaining, and debugging Python-based backend dashboards for clients.",
-        "Resolved Sentry-reported issues by optimizing code and addressing logic flaws, and implemented data and reporting automation (e.g., push notification tracking, order data processing, and automated report delivery to S3). Corrected over 1 million data entries through close collaboration with developers, and established robust data validation protocols that eliminated presentation-level errors.",
-        "Developed downloadable reports based on client-specific business rules for clients such as Pancious and Cimory, investigated anomalies using Jupyter Notebook, and deployed fixes directly in production.",
-        "Maintained production-grade code quality through comprehensive CI/CD workflows, implementing static type checking (mypy), automated linting, and GitHub-based version control for all reporting systems and data pipelines."
+        "Delivered 30+ customized routine reports for enterprise clients including Levi's, Burger King, and Tim Hortons Singapore, driving data-backed strategic decisions across multi-merchant networks.",
+        "Executed complex ad-hoc analytics including cohort analysis, customer movement tracking, store-level investigations, and forecasting to resolve critical client business inquiries.",
+        "Isolated and generated targeted marketing lists of 100k - 800k users based on multi-criteria behavioral data and customer profile attributes for WhatsApp and email campaigns.",
+        "Engineered Scikit-Learn conversion models that increased email CTR by 22.31% and boosted revenue per open email by 184.36% using an end-to-end Django, Pandas, and NumPy pipeline.",
+        "Bridged technical and non-technical stakeholders by translating complex data pipeline anomalies and operational insights into clear, actionable business strategies.",
+        "Designed and deployed user-based Association Rule recommendation systems from scratch, delivering personalized product suggestions to approximately 900,000 users.",
+        "Built 20+ interactive Metabase dashboards using SQL and ClickHouse database infrastructure, while maintaining and debugging Python-based backend production dashboards.",
+        "Automated daily reporting pipelines and pushed encrypted data directly to AWS S3, resolving Sentry log flaws to ensure robust production delivery.",
+        "Sanitized over 1 million database entries and established automated data validation protocols to completely eliminate presentation-level reporting errors.",
+        "Engineered complex bonus calculation systems for Cimory (BSM, BPK, TPJ, MBM) with multi-criteria eligibility filters spanning attendance, timelines, and sales experience.",
+        "Optimized critical reporting queries 10x to 100x using cursor-based pagination, completely eliminating server Out-Of-Memory (OOM) errors on 1M+ record datasets.",
+        "Developed 8+ automated test suites to validate data integrity for high-stakes financial rewards and loyalty point allocation calculations.",
+        "Maintained production-grade code quality by integrating static type checking (mypy) and automated linting within comprehensive GitHub CI/CD workflows."
       ],
       "tech": ["Python", "SQL", "ClickHouse", "Metabase", "Django", "Scikit-Learn", "AWS S3", "Sentry"]
     },

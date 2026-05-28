@@ -234,7 +234,7 @@ export default function App() {
           
           {/* Subheading */}
           <p className="font-sans text-base sm:text-lg md:text-xl text-on-surface-variant max-w-3xl mx-auto mb-12 leading-relaxed select-text">
-            Business Intelligence Analyst with a Master’s in Applied Business Analytics. Offers 4+ years of experience optimizing Retail, Fashion, and F&B operations.
+            Business Intelligence Analyst & Engineer with a Master’s in Applied Business Analytics. Offers 4+ years of experience optimizing Retail, Fashion, and F&B operations.
           </p>
           
           {/* Main image banner device */}
