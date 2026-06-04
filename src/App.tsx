@@ -39,7 +39,7 @@ import SystemsLogConsole from './components/SystemsLogConsole';
 // Custom generated Medium post thumbnails
 import chicagoCrimeImg from './assets/images/chicago_crime_thumbnail_1779568417989.png';
 import rfmAnalyticsImg from './assets/images/rfm_analytics_thumbnail_1779568438856.png';
-import profpic from './assets/images/bintang_avatar.jpg';
+import profpic from './assets/images/bintang_avatar2.png';
 import chicago_thumbnail from './assets/images/chicago.png';
 import ecommerce_thumbnail from './assets/images/ecommerce.png';
 
