@@ -691,7 +691,7 @@ export default function App() {
                 href="https://medium.com/@bintangm22/customer-personality-analysis-with-rfm-e10028d98c7b"
                 target="_blank"
                 rel="noreferrer"
-                className="glass-card overflow-hidden bg-black/20 hover:border-secondary-fixed/35 transition-all group flex flex-col rounded-lg hover:-translate-y-1 duration-500"
+                className="glass-card overflow-hidden bg-black/20 hover:border-primary-fixed/35 transition-all group flex flex-col rounded-lg hover:-translate-y-1 duration-500"
               >
                 {/* Image Container */}
                 <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-white/5 bg-neutral-900">
@@ -705,7 +705,7 @@ export default function App() {
                   
                   {/* Badge overlay bottom left */}
                   <div className="absolute bottom-4 left-4 flex gap-2">
-                    <span className="px-2 py-1 bg-black/85 text-secondary-fixed text-[9px] font-mono border border-secondary-fixed/20 rounded font-bold uppercase tracking-wider">
+                    <span className="px-2 py-1 bg-black/85 text-primary-fixed text-[9px] font-mono border border-primary-fixed/20 rounded font-bold uppercase tracking-wider">
                       RFM SEGMENTATION
                     </span>
                   </div>
@@ -719,15 +719,15 @@ export default function App() {
                       <span>•</span>
                       <span>READ TIME: 8 MIN</span>
                     </div>
-                    <h3 className="font-display text-lg font-bold text-white group-hover:text-secondary-fixed transition-colors mt-2 uppercase">
+                    <h3 className="font-display text-lg font-bold text-white group-hover:text-primary-fixed transition-colors mt-2 uppercase">
                       Customer Personality Analysis with RFM
                     </h3>
                     <p className="text-on-surface-variant font-sans text-xs mt-3 leading-relaxed">
-                      In today’s business world, knowing what your customers do is super important. One of the best ways to figure this out is by using something called RFM analysis. It’s a simple yet powerful way to see what your customers are up to by looking at their shopping habits.
+                      In today's business world, knowing what your customers do is super important. One of the best ways to figure this out is by using something called RFM analysis. It's a simple yet powerful way to see what your customers are up to by looking at their shopping habits.
                     </p>
                   </div>
                   
-                  <div className="flex items-center gap-1.5 text-xs font-mono font-medium tracking-wide text-secondary-fixed shrink-0 pt-2 border-t border-white/5">
+                  <div className="flex items-center gap-1.5 text-xs font-mono font-medium tracking-wide text-primary-fixed shrink-0 pt-2 border-t border-white/5">
                     <span>Read full publication on Medium</span>
                     <ExternalLink className="w-3.5 h-3.5 group-hover:translate-x-1 duration-300 transition-transform" />
                   </div>
