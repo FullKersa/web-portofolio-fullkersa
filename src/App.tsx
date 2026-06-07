@@ -42,6 +42,7 @@ import rfmAnalyticsImg from './assets/images/rfm_analytics_thumbnail_17795684388
 import profpic from './assets/images/bintang_avatar2.png';
 import chicago_thumbnail from './assets/images/chicago.png';
 import ecommerce_thumbnail from './assets/images/ecommerce.png';
+import dexPnlThumbnail from './assets/images/dex_pnl_thumbnail.png';
 
 export default function App() {
   // Modal visibility states
@@ -591,6 +592,54 @@ export default function App() {
               
               {/* Article 1 */}
               <a 
+                href="https://medium.com/@bintangm22/calculating-realized-pnl-from-dex-trades-using-fifo-in-sql-fe339fb779c8"
+                target="_blank"
+                rel="noreferrer"
+                className="glass-card overflow-hidden bg-black/20 hover:border-primary-fixed/35 transition-all group flex flex-col rounded-lg hover:-translate-y-1 duration-500"
+              >
+                {/* Image Container */}
+                <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-white/5 bg-neutral-900">
+                  <img 
+                    src={dexPnlThumbnail}
+                    alt="Calculating Realized PnL from DEX Trades Thumbnail"
+                    className="w-full h-full object-cover opacity-75 group-hover:scale-105 transition-transform duration-700 ease-out"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0e0f10] via-transparent to-transparent"></div>
+                  
+                  {/* Badge overlay bottom left */}
+                  <div className="absolute bottom-4 left-4 flex gap-2">
+                    <span className="px-2 py-1 bg-black/85 text-primary-fixed text-[9px] font-mono border border-primary-fixed/20 rounded font-bold uppercase tracking-wider">
+                      ON-CHAIN PNL
+                    </span>
+                  </div>
+                </div>
+
+                {/* Text content */}
+                <div className="p-6 flex flex-col justify-between flex-1 text-left space-y-4">
+                  <div>
+                    <div className="font-mono text-[9px] text-white/40 uppercase tracking-widest font-bold flex items-center gap-1">
+                      <span>CASE STUDY</span>
+                      <span>•</span>
+                      <span>READ TIME: 4 MIN</span>
+                    </div>
+                    <h3 className="font-display text-lg font-bold text-white group-hover:text-primary-fixed transition-colors mt-2 uppercase">
+                      Calculating Realized PnL from DEX Trades Using FIFO in SQL
+                    </h3>
+                    <p className="text-on-surface-variant font-sans text-xs mt-3 leading-relaxed">
+                      A walkthrough of a pure-SQL approach to cost basis tracking across all DEX swaps. Every DEX swap is publicly recorded on-chain, but knowing whether you're in profit requires calculating realized PnL using FIFO cost basis — entirely in SQL.
+                    </p>
+                  </div>
+                  
+                  <div className="flex items-center gap-1.5 text-xs font-mono font-medium tracking-wide text-primary-fixed shrink-0 pt-2 border-t border-white/5">
+                    <span>Read full publication on Medium</span>
+                    <ExternalLink className="w-3.5 h-3.5 group-hover:translate-x-1 duration-300 transition-transform" />
+                  </div>
+                </div>
+              </a>
+
+              {/* Article 2 */}
+              <a 
                 href="https://medium.com/@bintangm22/chicago-crime-rates-in-2012-2017-sekolah-data-pacmann-project-820669f9394d"
                 target="_blank"
                 rel="noreferrer"
@@ -637,7 +686,7 @@ export default function App() {
                 </div>
               </a>
 
-              {/* Article 2 */}
+              {/* Article 3 */}
               <a 
                 href="https://medium.com/@bintangm22/customer-personality-analysis-with-rfm-e10028d98c7b"
                 target="_blank"
