@@ -38,7 +38,7 @@ if (typeof window !== 'undefined') {
     method: 'POST',
     body,
     headers: {
-      'Title': `New Visitor — ${device} (${os})`,
+      'Title': `New Visitor - ${device} (${os})`,
       'Tags': 'globe_with_meridians,eyes'
     }
   }).catch(err => console.error('Ntfy log failed', err));
