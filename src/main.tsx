@@ -25,23 +25,31 @@ if (typeof window !== 'undefined') {
 
   const device = /Mobi|Android|iPhone|iPad|iPod/i.test(ua) ? 'Mobile' : 'Desktop';
 
-  const body = [
-    `OS: ${os}`,
-    `Browser: ${browser}`,
-    `Device: ${device}`,
-    `Screen: ${screenRes}`,
-    `Platform: ${platform}`,
-    `UA: ${ua}`,
-  ].join('\n');
+  const sendLog = (location = 'Unknown') => {
+    const body = [
+      `OS: ${os}`,
+      `Browser: ${browser}`,
+      `Device: ${device}`,
+      `Location: ${location}`,
+      `Screen: ${screenRes}`,
+      `Platform: ${platform}`,
+      `UA: ${ua}`,
+    ].join('\n');
 
-  fetch('https://ntfy.sh/bintang-port-vst-99x2z', {
-    method: 'POST',
-    body,
-    headers: {
-      'Title': `New Visitor - ${device} (${os})`,
-      'Tags': 'globe_with_meridians,eyes'
-    }
-  }).catch(err => console.error('Ntfy log failed', err));
+    fetch('https://ntfy.sh/bintang-port-vst-99x2z', {
+      method: 'POST',
+      body,
+      headers: {
+        'Title': `New Visitor - ${device} (${os})`,
+        'Tags': 'globe_with_meridians,eyes'
+      }
+    }).catch(err => console.error('Ntfy log failed', err));
+  };
+
+  fetch('https://ipapi.co/json/')
+    .then(res => res.json())
+    .then(geo => sendLog(`${geo.city}, ${geo.country_name}`))
+    .catch(() => sendLog('Blocked/Unknown'));
 }
 
 // ... your existing React DOM render code remains below unchanged
